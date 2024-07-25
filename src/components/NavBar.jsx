@@ -1,6 +1,8 @@
 
 import { Navbar, NavbarBrand, NavbarContent, NavbarItem, Link, DropdownItem, DropdownTrigger, Dropdown, DropdownMenu, Avatar } from "@nextui-org/react";
 import img from '../assets/portfolio.jpg'
+import { useState } from "react";
+
 function NavBar() {
     const handleScroll = (id)=>{
         // console.log('scroll: ' , id);
@@ -11,26 +13,30 @@ function NavBar() {
             element.scrollIntoView({behavior:"smooth"})
         }
     }
+
+    const [activeItem, setActiveItem] = useState("home");
+
+    
     return (
-        <Navbar className='shadow-lg shadow-purple-900' shouldHideOnScroll>
+        <Navbar className='shadow-lg  shadow-purple-950' shouldHideOnScroll>
             <NavbarBrand>
                 
                 <p className="font-bold text-inherit text-4xl">Ahanaf.</p>
             </NavbarBrand>
 
             <NavbarContent className="hidden sm:flex gap-4" justify="center">
-                <NavbarItem>
-                    <Link color="foreground" href="#">
+                <NavbarItem isActive={activeItem === 'home'}>
+                    <Link color="foreground" className={`${activeItem === 'home' ? 'text-purple-600' : ''}`}  href="#" onPress={()=>{handleScroll("home") ; setActiveItem('home')}}>
                         Home
                     </Link>
                 </NavbarItem>
-                <NavbarItem>
-                    <Link color="foreground" href="#" onPress={()=>handleScroll("projects")} >
+                <NavbarItem isActive={activeItem === 'projects'}>
+                    <Link color="foreground" className={`${activeItem === 'projects' ? 'text-purple-600' : ''}`} href="#" onPress={()=>{handleScroll("projects") ; setActiveItem('projects')}} >
                         Projects
                     </Link>
                 </NavbarItem>
-                <NavbarItem isActive>
-                    <Link href="#" aria-current="page" color="secondary">
+                <NavbarItem isActive={activeItem === 'skills'}>
+                    <Link color="foreground" href="#" className={`${activeItem === 'skills' ? 'text-purple-600' : ''}`}  onPress={()=>{handleScroll('skills'); setActiveItem('skills')} }>
                         Skills
                     </Link>
                 </NavbarItem>
