@@ -48,7 +48,7 @@ function NavBar() {
             </NavbarContent>
 
             <NavbarContent as="div" justify="end">
-                <Dropdown placement="bottom-end">
+                <Dropdown placement="bottom-end" className="bg-orange-700 text-white/70 font-semibold ">
                     <DropdownTrigger>
                         <Avatar
                             isBordered
@@ -62,15 +62,9 @@ function NavBar() {
                     </DropdownTrigger>
                     <DropdownMenu aria-label="Profile Actions" variant="flat">
                      
-                        <DropdownItem key="settings">Get My CV</DropdownItem>
-                        <DropdownItem key="team_settings">Team Settings</DropdownItem>
-                        <DropdownItem key="analytics">Analytics</DropdownItem>
-                        <DropdownItem key="system">System</DropdownItem>
-                        <DropdownItem key="configurations">Configurations</DropdownItem>
-                        <DropdownItem key="help_and_feedback">Help & Feedback</DropdownItem>
-                        <DropdownItem key="logout" color="danger">
-                            Log Out
-                        </DropdownItem>
+                        <DropdownItem key="settings"><a href="/Ahanaf-Tanvir's-CV.pdf" download="Ahanaf-Tanvir's-CV.pdf">Get My CV</a></DropdownItem>
+                        <DropdownItem key="team_settings">Contact</DropdownItem>
+
                     </DropdownMenu>
                 </Dropdown>
             </NavbarContent>

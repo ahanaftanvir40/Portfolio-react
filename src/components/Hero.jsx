@@ -4,6 +4,8 @@ import { Image } from "@nextui-org/react";
 // import Typical from "react-typical";
 import Typed from 'typed.js';
 import { useRef, useEffect } from "react";
+import githubImg from '../assets/github2.png'
+import linkedinImg from '../assets/linkedin.png'
 
 function Hero({ textEnter, textLeave }) {
 
@@ -47,7 +49,7 @@ function Hero({ textEnter, textLeave }) {
               }}
               className="py-2 mt-8 w-full lg:w-[180px] text-center rounded-lg shadow-lg shadow-orange-800 bg-gradient-to-r from-orange-500 via-purple-600 to-purple-900"
             >
-              <h1 className="text-xl font-light">Hey there!</h1>
+              <h1 className="text-xl font-light cursor-default">Hey there!</h1>
             </motion.div>
             <div className="mt-6">
               <motion.div
@@ -77,6 +79,14 @@ function Hero({ textEnter, textLeave }) {
               >
                 A lone warrior on a journey through the world of development, facing challenges with the strength of the Berserker Armor.
               </motion.p>
+              <div className="mt-4 flex">
+                <a href="https://github.com/ahanaftanvir40" target="_blank">
+                  <img className="h-10 w-10 transition-transform transform hover:scale-110" src={githubImg} alt="" />
+                </a>
+                <a href="https://www.linkedin.com/in/ahanaf-tanvir-980a06264/" target="_blank">
+                  <img className="h-12 w-12 ml-2 opacity-65 transition-transform transform hover:scale-110" src={linkedinImg} alt="" />
+                </a>
+              </div>
             </div>
           </div>
         </div>

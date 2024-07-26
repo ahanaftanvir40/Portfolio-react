@@ -1,4 +1,4 @@
-
+import Reveal from "../../utils/Reveal"
 
 function Education({textEnter , textLeave}) {
     return (
@@ -24,8 +24,10 @@ function Education({textEnter , textLeave}) {
                                     clipRule="evenodd" />
                             </svg>
                         </div>
+                        
                         <div className="timeline-start mb-10 md:text-end">
                             <time className="font-mono italic">2018</time>
+                            <Reveal>
                             <div className="text-lg font-black">Government Science High School</div>
                             <div>
                                 <h1 className="font-light">Department: Science</h1>
@@ -33,6 +35,7 @@ function Education({textEnter , textLeave}) {
                             <div>
                                 <h1 className="font-light">SSC Result: GPA 4.89</h1>
                             </div>
+                            </Reveal>
                         </div>
                         <hr />
                     </li>
@@ -52,6 +55,7 @@ function Education({textEnter , textLeave}) {
                         </div>
                         <div className="timeline-end mb-10">
                             <time className="font-mono italic">2020</time>
+                            <Reveal>
                             <div className="text-lg font-black">Govt. Mohammadpur Model School & College</div>
                             <div>
                                 <h1 className="font-light">Department: Science</h1>
@@ -59,6 +63,7 @@ function Education({textEnter , textLeave}) {
                             <div>
                                 <h1 className="font-light">HSC Result: GPA 5.00</h1>
                             </div>
+                            </Reveal>
                         </div>
                         <hr />
                     </li>
@@ -79,6 +84,7 @@ function Education({textEnter , textLeave}) {
                         </div>
                         <div className="timeline-start mb-10 md:text-end">
                             <time className="font-mono italic">2021</time>
+                            <Reveal>
                             <div className="text-lg font-black"> <a href="https://www.bracu.ac.bd/" target="_blank">BRAC University</a> </div>
                             <div>
                                 <h1 className="font-light">Department: Computer Science</h1>
@@ -86,6 +92,7 @@ function Education({textEnter , textLeave}) {
                             <div>
                                 <h1 className="font-light">CGPA: Ongoing </h1>
                             </div>
+                            </Reveal>
                         </div>
                     </li>
                 </ul>
