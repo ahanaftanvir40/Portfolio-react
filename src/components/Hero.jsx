@@ -61,7 +61,7 @@ function Hero({ textEnter, textLeave }) {
                 }}
                 onMouseEnter={textEnter}
                 onMouseLeave={textLeave}
-                className="text-3xl sm:w-fit sm:h-[110px]  cursor-none lg:text-5xl font-medium mt-4 text-center lg:text-left"
+                className="text-3xl sm:w-fit h-[75px] sm:h-[110px]  cursor-none lg:text-5xl font-medium mt-4 text-center lg:text-left"
               >
                 <h1 ref={typedElement}></h1>
 
@@ -75,7 +75,7 @@ function Hero({ textEnter, textLeave }) {
                 }}
                 onMouseEnter={textEnter}
                 onMouseLeave={textLeave}
-                className="mt-2 sm:mt-0 cursor-none tracking-wider font-medium text-slate-300 text-center lg:text-left"
+                className="-mt-1 sm:mt-0 cursor-none tracking-wider font-medium text-slate-300 text-center lg:text-left"
               >
                 A lone warrior on a journey through the world of development, facing challenges with the strength of the Berserker Armor.
               </motion.p>
