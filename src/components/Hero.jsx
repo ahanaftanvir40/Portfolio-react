@@ -79,7 +79,7 @@ function Hero({ textEnter, textLeave }) {
               >
                 A lone warrior on a journey through the world of development, facing challenges with the strength of the Berserker Armor.
               </motion.p>
-              <div className="mt-4 flex">
+              <div className="mt-4 flex justify-center items-center sm:justify-start sm:items-start">
                 <a href="https://github.com/ahanaftanvir40" target="_blank">
                   <img className="h-10 w-10 transition-transform transform hover:scale-110" src={githubImg} alt="" />
                 </a>
