@@ -18,30 +18,30 @@ function NavBar() {
 
     
     return (
-        <Navbar className='shadow-lg  shadow-purple-950' shouldHideOnScroll>
+        <Navbar className='shadow-xl shadow-purple-950' shouldHideOnScroll>
             <NavbarBrand>
                 
                 <p className="font-bold text-inherit text-4xl">Ahanaf.</p>
             </NavbarBrand>
 
-            <NavbarContent className="hidden sm:flex gap-4" justify="center">
+            <NavbarContent className="hidden sm:flex gap-4 cursor-pointer" justify="center">
                 <NavbarItem isActive={activeItem === 'home'}>
-                    <Link color="foreground" className={`${activeItem === 'home' ? 'text-purple-600' : ''}`}  href="#" onPress={()=>{handleScroll("home") ; setActiveItem('home')}}>
+                    <Link color="foreground" className={`${activeItem === 'home' ? 'text-purple-600' : ''}`}  onPress={()=>{handleScroll("home") ; setActiveItem('home')}}>
                         Home
                     </Link>
                 </NavbarItem>
                 <NavbarItem isActive={activeItem === 'projects'}>
-                    <Link color="foreground" className={`${activeItem === 'projects' ? 'text-purple-600' : ''}`} href="#" onPress={()=>{handleScroll("projects") ; setActiveItem('projects')}} >
+                    <Link color="foreground" className={`${activeItem === 'projects' ? 'text-purple-600' : ''}`}  onPress={()=>{handleScroll("projects") ; setActiveItem('projects')}} >
                         Projects
                     </Link>
                 </NavbarItem>
                 <NavbarItem isActive={activeItem === 'skills'}>
-                    <Link color="foreground" href="#" className={`${activeItem === 'skills' ? 'text-purple-600' : ''}`}  onPress={()=>{handleScroll('skills'); setActiveItem('skills')} }>
+                    <Link color="foreground" className={`${activeItem === 'skills' ? 'text-purple-600' : ''}`}  onPress={()=>{handleScroll('skills'); setActiveItem('skills')} }>
                         Skills
                     </Link>
                 </NavbarItem>
-                <NavbarItem>
-                    <Link color="foreground" href="#">
+                <NavbarItem isActive={activeItem === 'education'}>
+                    <Link color="foreground" className={`${activeItem === 'education' ? 'text-purple-600' : ''}`} onPress={()=>{handleScroll('education'); setActiveItem('education')} }>
                         Education
                     </Link>
                 </NavbarItem>

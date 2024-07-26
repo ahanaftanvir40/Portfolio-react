@@ -1,15 +1,15 @@
 
 
-function Education() {
+function Education({textEnter , textLeave}) {
     return (
         <div id="education">
-            <div className="h-[100px] w-fit m-auto sm:flex sm:items-end mt-8 sm:mt-12">
+            <div className="h-[100px] w-fit m-auto cursor-none sm:flex sm:items-end mt-8 sm:mt-12" onMouseEnter={textEnter} onMouseLeave={textLeave}>
                 <div className="border border-purple-950 rounded-lg shadow-md shadow-purple-800">
                     <h1 className="text-4xl p-4 font-medium text-center">Education.</h1>
                 </div>
             </div>
 
-            <div className="mt-8 sm:mt-10">
+            <div className="mt-8 sm:mt-10 cursor-none" onMouseEnter={textEnter} onMouseLeave={textLeave}>
                 <ul className="timeline timeline-snap-icon max-md:timeline-compact timeline-vertical">
                     <li>
                         <div className="timeline-middle">

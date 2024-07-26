@@ -3,6 +3,8 @@
 @tailwind utilities;
 
 
+
+
 #cursor{
     background-color: transparent;
     height: 32px;
@@ -16,3 +18,5 @@
     
 
 }
+
+

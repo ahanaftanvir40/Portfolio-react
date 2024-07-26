@@ -1,151 +1,56 @@
+import htmlImg from '../assets/html.png';
+import reactImg from '../assets/reactimg.png';
+import cssImg from '../assets/cssimg.png';
+import jsImg from '../assets/js.png';
+import nodeImg from '../assets/node.png';
+import mongoImg from '../assets/mongo.png';
+import mysqlImg from '../assets/mysql.png';
+import postgresImg from '../assets/postgres.png';
+import pythonImg from '../assets/python.png';
+import djImg from '../assets/dj.png';
+import Reveal from '../../utils/Reveal';
 
-import htmlImg from '../assets/html.png'
-import reactImg from '../assets/reactimg.png'
-import cssImg from '../assets/cssimg.png'
-import jsImg from '../assets/js.png'
-import nodeImg from '../assets/node.png'
-import mongoImg from '../assets/mongo.png'
-import mysqlImg from '../assets/mysql.png'
-import postgresImg from '../assets/postgres.png'
-import pythonImg from '../assets/python.png'
-import djImg from '../assets/dj.png'
-function Skills() {
-    return (
-        <div id='skills'>
-            <div className="h-[100px] w-fit m-auto sm:flex sm:items-end mt-8 sm:mt-12">
+function Skills({textEnter , textLeave}) {
+  const skills = [
+    { src: htmlImg, alt: 'HTML', label: 'HTML', borderColor: 'orange-700', shadowColor: 'orange-600' },
+    { src: cssImg, alt: 'CSS', label: 'CSS', borderColor: 'blue-500', shadowColor: 'blue-400' },
+    { src: jsImg, alt: 'JavaScript', label: 'JavaScript', borderColor: 'yellow-500', shadowColor: 'yellow-400' },
+    { src: reactImg, alt: 'React', label: 'React', borderColor: 'cyan-600', shadowColor: 'cyan-700' },
+    { src: nodeImg, alt: 'Node.js', label: 'Node.js', borderColor: 'lime-400', shadowColor: 'lime-500' },
+    { src: mongoImg, alt: 'MongoDB', label: 'MongoDB', borderColor: 'green-700', shadowColor: 'green-600' },
+    { src: mysqlImg, alt: 'MySQL', label: 'MySQL', borderColor: 'cyan-700', shadowColor: 'cyan-500' },
+    { src: postgresImg, alt: 'PostgreSQL', label: 'PostgreSQL', borderColor: 'slate-600', shadowColor: 'slate-400' },
+    { src: pythonImg, alt: 'Python', label: 'Python', borderColor: 'blue-600', shadowColor: 'blue-400' },
+    { src: djImg, alt: 'Django', label: 'Django', borderColor: 'green-900', shadowColor: 'green-600' },
+  ];
+
+  return (
+    <div id="skills" className=" mt-10 py-10">
+            <div className="h-[100px] w-fit m-auto sm:flex sm:items-end mb-10">
                 <div className="border border-purple-950 rounded-lg shadow-md shadow-purple-800">
-                    <h1 className="text-4xl p-4 font-medium text-center">Skills.</h1>
+                <h1 onMouseEnter={textEnter} onMouseLeave={textLeave} className="cursor-none text-4xl p-4 font-medium text-center">Skills.</h1>
                 </div>
-
+                
             </div>
-
-            <div className="mt-5 sm:mt-8">
-                <ul className="timeline timeline-vertical">
-                    <li>
-                        <div className="timeline-start timeline-box bg-transparent border-orange-700 shadow-md shadow-orange-600  flex flex-col justify-center items-center text-center">
-                            <div>
-                                <img className='h-12 w-12' src={htmlImg} alt="" />
-                            </div>
-                            <div>
-                                <h1 className="font-light">HTML</h1>
-                            </div>
-                        </div>
-                        <hr />
-                    </li>
-                    <li>
-                        <hr />
-                        <div className="timeline-end timeline-box bg-transparent border-blue-500 shadow-md shadow-blue-400  flex flex-col justify-center items-center text-center">
-                            <div>
-                                <img className='h-12 w-12' src={cssImg} alt="" />
-                            </div>
-                            <div>
-                                <h1 className="font-light">CSS</h1>
-                            </div>
-                        </div>
-                        <hr />
-                    </li>
-                    <li>
-                        <hr />
-                        <div className="timeline-start timeline-box bg-transparent border-yellow-500 shadow-md shadow-yellow-400  flex flex-col justify-center items-center text-center">
-                            <div>
-                                <img className='h-12 w-12' src={jsImg} alt="" />
-                            </div>
-                            <div>
-                                <h1 className="font-light">JavaScript</h1>
-                            </div>
-                        </div>
-                        <hr />
-                    </li>
-                    <li>
-                        <hr />
-                        <div className="timeline-end timeline-box bg-transparent border-cyan-600 shadow-md shadow-cyan-700  flex flex-col justify-center items-center text-center">
-                            <div>
-                                <img className='h-12 w-12' src={reactImg} alt="" />
-                            </div>
-                            <div>
-                                <h1 className="font-light">React</h1>
-                            </div>
-                        </div>
-                        <hr />
-                    </li>
-                    <li>
-                        <hr />
-                        <div className="timeline-start timeline-box bg-transparent border-lime-400 shadow-md shadow-lime-500  flex flex-col justify-center items-center text-center">
-                            <div>
-                                <img className='h-12 w-12' src={nodeImg} alt="" />
-                            </div>
-                            <div>
-                                <h1 className="font-light">Node.js</h1>
-                            </div>
-                        </div>
-                        <hr />
-                    </li>
-
-                    <li>
-                        <hr />
-                        <div className="timeline-end timeline-box bg-transparent border-green-700 shadow-md shadow-green-600  flex flex-col justify-center items-center text-center">
-                            <div>
-                                <img className='h-12 w-12' src={mongoImg} alt="" />
-                            </div>
-                            <div>
-                                <h1 className="font-light">MongoDB</h1>
-                            </div>
-                        </div>
-                        <hr />
-                    </li>
-                    <li>
-                        <hr />
-                        <div className="timeline-start timeline-box bg-transparent border-cyan-700 shadow-md shadow-cyan-500  flex flex-col justify-center items-center text-center">
-                            <div>
-                                <img className='h-12 w-12' src={mysqlImg} alt="" />
-                            </div>
-                            <div>
-                                <h1 className="font-light">MySQL</h1>
-                            </div>
-                        </div>
-                        <hr />
-                    </li>
-                    <li>
-                        <hr />
-                        <div className="timeline-end timeline-box bg-transparent border-slate-600 shadow-md shadow-slate-400  flex flex-col justify-center items-center text-center">
-                            <div>
-                                <img className='h-12 w-12' src={postgresImg} alt="" />
-                            </div>
-                            <div>
-                                <h1 className="font-light">PostgreSQL</h1>
-                            </div>
-                        </div>
-                        <hr />
-                    </li>
-                    <li>
-                        <hr />
-                        <div className="timeline-start timeline-box bg-transparent border-blue-600 shadow-md shadow-blue-400  flex flex-col justify-center items-center text-center">
-                            <div>
-                                <img className='h-12 w-12' src={pythonImg} alt="" />
-                            </div>
-                            <div>
-                                <h1 className="font-light">Python</h1>
-                            </div>
-                        </div>
-                        <hr />
-                    </li>
-                    <li>
-                        <hr />
-                        <div className="timeline-end timeline-box bg-transparent border-green-900 shadow-md shadow-green-600  flex flex-col justify-center items-center text-center">
-                            <div>
-                                <img className='h-12 w-12' src={djImg} alt="" />
-                            </div>
-                            <div>
-                                <h1 className="font-light">Django</h1>
-                            </div>
-                        </div>
-                        <hr />
-                    </li>
-                </ul>
+      <Reveal>
+        <div className="grid grid-cols-2 cursor-none md:grid-cols-3 lg:grid-cols-5 gap-6 px-4 sm:px-8 lg:px-16" onMouseEnter={textEnter}
+            onMouseLeave={textLeave}>
+          {skills.map((skill, index) => (
+            <div
+            
+              key={index}
+              className={`flex flex-col cursor-none items-center justify-center py-3 border-2 border-${skill.borderColor} rounded-lg shadow-md shadow-${skill.shadowColor}  transition duration-300`}
+            >
+              <Reveal>
+              <img className="h-16 w-16 mb-4" src={skill.src} alt={skill.alt} />
+              <h2 className="text-lg font-light">{skill.label}</h2>
+              </Reveal>
             </div>
-
+          ))}
         </div>
-    )
+      </Reveal>
+    </div>
+  );
 }
 
-export default Skills
+export default Skills;

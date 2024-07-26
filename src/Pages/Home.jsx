@@ -1,8 +1,8 @@
-import { useEffect, useState } from "react"
+import { useEffect, useState, } from "react"
 import { Education, Hero, Projects, Skills } from "../components"
 import { motion } from "framer-motion";
 import debounce from 'lodash.debounce';
-
+import Reveal from "../../utils/Reveal";
 function Home() {
     const [mousePosition, setMousePosition] = useState({
         x: 0,
@@ -11,6 +11,8 @@ function Home() {
     // console.log(mousePosition);
 
     const [cursorVariant, setCursorVariant] = useState('default')
+
+
 
     useEffect(() => {
         const mouseMove = debounce((e) => {
@@ -27,8 +29,8 @@ function Home() {
 
     const variants = {
         default: {
-            // x: mousePosition.x - 16,
-            // y: mousePosition.y - 16
+            x: mousePosition.x - 16,
+            y: mousePosition.y - 16
         },
         text: {
             height: 80,
@@ -37,7 +39,7 @@ function Home() {
             y: mousePosition.y - 55,
             backgroundColor: 'white',
             mixBlendMode: 'difference',
-            
+
         }
     }
 
@@ -45,16 +47,30 @@ function Home() {
     const textLeave = () => setCursorVariant('default')
     return (
         <div className="min-h-screen min-w-full overflow-hidden" id="home">
+
             <motion.div id="cursor"
                 variants={variants}
                 animate={cursorVariant}
             >
 
             </motion.div>
-            <Hero textEnter={textEnter} textLeave={textLeave} />
-            <Projects textEnter={textEnter} textLeave={textLeave} />
-            <Skills textEnter={textEnter} textLeave={textLeave} />
-            <Education textEnter={textEnter} textLeave={textLeave} />
+
+            <Reveal>
+                <Hero textEnter={textEnter} textLeave={textLeave} />
+
+            </Reveal>
+            <Reveal>
+                <Projects textEnter={textEnter} textLeave={textLeave} />
+            </Reveal>
+
+            <Reveal>
+                <Skills textEnter={textEnter} textLeave={textLeave} />
+            </Reveal>
+
+            <Reveal>
+                <Education textEnter={textEnter} textLeave={textLeave} />
+            </Reveal>
+
         </div>
 
 
