@@ -32,8 +32,8 @@ function Hero({ textEnter, textLeave }) {
   }, []);
 
   return (
-    <div className="container mx-auto px-4">
-      <div className="flex flex-col lg:flex-row justify-around items-center mt-5 sm:mt-24 min-h-[40vh] space-y-10 lg:space-y-0 lg:space-x-10">
+    <div className="container mx-auto px-4 min-h-screen flex items-center">
+      <div className="flex flex-col lg:flex-row justify-around items-center sm:mt-24 min-h-[40vh] space-y-5 lg:space-y-0 lg:space-x-10 w-full">
         <div className="flex flex-col justify-center items-center h-auto lg:h-[400px]">
           <div className="w-full lg:w-[60vh] h-auto lg:h-40vh">
             <motion.div

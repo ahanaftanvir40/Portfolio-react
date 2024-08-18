@@ -8,25 +8,27 @@ import mysqlImg from '../assets/mysql.png';
 import postgresImg from '../assets/postgres.png';
 import pythonImg from '../assets/python.png';
 import djImg from '../assets/dj.png';
+import nextImg from '../assets/next.png'
 import Reveal from '../../utils/Reveal';
 
 function Skills({ textEnter, textLeave }) {
   return (
-    <div id="skills" className="mt-10 py-10">
-      <div className="h-[100px] w-fit m-auto sm:flex sm:items-end mb-10">
-        <div className="border border-purple-950 rounded-lg shadow-md shadow-purple-800">
-          <h1
-            onMouseEnter={textEnter}
-            onMouseLeave={textLeave}
-            className="cursor-none text-4xl p-4 font-medium text-center"
-          >
-            Skills.
-          </h1>
-        </div>
-      </div>
+    <div id="skills" className="mt-10 py-10 min-h-screen">
+
       <Reveal>
+        <div className="h-[100px] w-fit m-auto sm:flex sm:items-end  sm:mt-52">
+          <div className="border border-purple-950 rounded-lg shadow-md shadow-purple-800 mb-10">
+            <h1
+              onMouseEnter={textEnter}
+              onMouseLeave={textLeave}
+              className="cursor-none text-4xl p-4 font-medium text-center"
+            >
+              Skills.
+            </h1>
+          </div>
+        </div>
         <div
-          className="grid grid-cols-2 cursor-none md:grid-cols-3 lg:grid-cols-5 gap-6 px-4 sm:px-8 lg:px-16"
+          className="grid grid-cols-2 cursor-none md:grid-cols-3 lg:grid-cols-5 gap-6 px-4 sm:px-8 lg:px-16 "
           onMouseEnter={textEnter}
           onMouseLeave={textLeave}
         >
@@ -97,6 +99,12 @@ function Skills({ textEnter, textLeave }) {
             <Reveal>
               <img className="h-16 w-16 mb-4" src={djImg} alt="Django" />
               <h2 className="text-lg font-light text-center">Django</h2>
+            </Reveal>
+          </div>
+          <div className="flex flex-col items-center justify-center py-3 border-2 border-slate-700 rounded-lg shadow-md shadow-slate-600 transition duration-300">
+            <Reveal>
+              <img className="h-16 w-16 mb-4" src={nextImg} alt="CSS" />
+              <h2 className="text-lg text-center font-light">Next.js</h2>
             </Reveal>
           </div>
         </div>

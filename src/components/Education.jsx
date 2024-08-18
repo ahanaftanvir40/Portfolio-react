@@ -1,15 +1,16 @@
 import Reveal from "../../utils/Reveal"
 
-function Education({textEnter , textLeave}) {
+function Education({ textEnter, textLeave }) {
     return (
-        <div id="education">
-            <div className="h-[100px] w-fit m-auto cursor-none sm:flex sm:items-end mt-8 sm:mt-12" onMouseEnter={textEnter} onMouseLeave={textLeave}>
-                <div className="border border-purple-950 rounded-lg shadow-md shadow-purple-800">
-                    <h1 className="text-4xl p-4 font-medium text-center">Education.</h1>
-                </div>
-            </div>
+        <div id="education" className="min-h-screen">
 
-            <div className="mt-8 sm:mt-10 cursor-none" onMouseEnter={textEnter} onMouseLeave={textLeave}>
+
+            <div className="mt-8 sm:mt-52 cursor-none" onMouseEnter={textEnter} onMouseLeave={textLeave}>
+                <div className="h-[100px] w-fit m-auto cursor-none sm:flex sm:items-end mt-8 sm:mt-12 mb-10" onMouseEnter={textEnter} onMouseLeave={textLeave}>
+                    <div className="border border-purple-950 rounded-lg shadow-md shadow-purple-800">
+                        <h1 className="text-4xl p-4 font-medium text-center">Education.</h1>
+                    </div>
+                </div>
                 <ul className="timeline timeline-snap-icon max-md:timeline-compact timeline-vertical">
                     <li>
                         <div className="timeline-middle">
@@ -24,17 +25,17 @@ function Education({textEnter , textLeave}) {
                                     clipRule="evenodd" />
                             </svg>
                         </div>
-                        
+
                         <div className="timeline-start mb-10 md:text-end">
                             <time className="font-mono italic">2018</time>
                             <Reveal>
-                            <div className="text-lg font-black">Government Science High School</div>
-                            <div>
-                                <h1 className="font-light">Department: Science</h1>
-                            </div>
-                            <div>
-                                <h1 className="font-light">SSC Result: GPA 4.89</h1>
-                            </div>
+                                <div className="text-lg font-black">Government Science High School</div>
+                                <div>
+                                    <h1 className="font-light">Department: Science</h1>
+                                </div>
+                                <div>
+                                    <h1 className="font-light">SSC Result: GPA 4.89</h1>
+                                </div>
                             </Reveal>
                         </div>
                         <hr />
@@ -56,13 +57,13 @@ function Education({textEnter , textLeave}) {
                         <div className="timeline-end mb-10">
                             <time className="font-mono italic">2020</time>
                             <Reveal>
-                            <div className="text-lg font-black">Govt. Mohammadpur Model School & College</div>
-                            <div>
-                                <h1 className="font-light">Department: Science</h1>
-                            </div>
-                            <div>
-                                <h1 className="font-light">HSC Result: GPA 5.00</h1>
-                            </div>
+                                <div className="text-lg font-black">Govt. Mohammadpur Model School & College</div>
+                                <div>
+                                    <h1 className="font-light">Department: Science</h1>
+                                </div>
+                                <div>
+                                    <h1 className="font-light">HSC Result: GPA 5.00</h1>
+                                </div>
                             </Reveal>
                         </div>
                         <hr />
@@ -85,13 +86,13 @@ function Education({textEnter , textLeave}) {
                         <div className="timeline-start mb-10 md:text-end">
                             <time className="font-mono italic">2021</time>
                             <Reveal>
-                            <div className="text-lg font-black"> <a href="https://www.bracu.ac.bd/" target="_blank">BRAC University</a> </div>
-                            <div>
-                                <h1 className="font-light">Department: Computer Science</h1>
-                            </div>
-                            <div>
-                                <h1 className="font-light">CGPA: Ongoing </h1>
-                            </div>
+                                <div className="text-lg font-black"> <a href="https://www.bracu.ac.bd/" target="_blank">BRAC University</a> </div>
+                                <div>
+                                    <h1 className="font-light">Department: Computer Science</h1>
+                                </div>
+                                <div>
+                                    <h1 className="font-light">CGPA: Ongoing </h1>
+                                </div>
                             </Reveal>
                         </div>
                     </li>
