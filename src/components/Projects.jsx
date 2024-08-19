@@ -41,13 +41,13 @@ function Projects({ textEnter, textLeave }) {
         github: 'https://github.com/ahanaftanvir40/Ki-Key-ECommerce',
         live: ''
     }
-    
+
     const project_04 = {
         no: '4',
         name: 'Trendy Kicks',
         stack: 'Next.js',
         body: `Trendy Kicks is a modern Next.js e-commerce platform for high-end sneaker enthusiasts. Users can browse premium sneakers, view details, and place orders effortlessly. The admin dashboard allows for easy management of sneaker listings and orders. The UI is sleek and user-friendly, ensuring a seamless experience for all.`,
-        tech: ['Next.js' , 'AceternityUI' ,'NextAuth', 'MongoDB'],
+        tech: ['Next.js', 'AceternityUI', 'NextAuth', 'MongoDB'],
         github: 'https://github.com/ahanaftanvir40/trendykicks_nextjs',
         live: 'https://trendykicks-phi.vercel.app/'
     }
