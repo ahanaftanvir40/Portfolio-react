@@ -3,6 +3,7 @@ import { Education, Hero, Projects, Skills } from "../components"
 import { motion } from "framer-motion";
 import debounce from 'lodash.debounce';
 import Reveal from "../../utils/Reveal";
+import Three from "../three/Three";
 function Home() {
     const [mousePosition, setMousePosition] = useState({
         x: 0,
@@ -70,6 +71,8 @@ function Home() {
             <Reveal>
                 <Education textEnter={textEnter} textLeave={textLeave} />
             </Reveal>
+
+            <Three />
 
         </div>
 
