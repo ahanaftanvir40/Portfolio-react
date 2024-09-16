@@ -1,18 +1,19 @@
 import { OrbitControls } from '@react-three/drei'
 import { Canvas } from '@react-three/fiber'
 import React from 'react'
-import * as THREE from 'three'
+import Scene from './Scene'
+
 
 function Three() {
+    const handleProjectClick = (project) => {
+        alert(`Clicked on: ${project.name}`); // Replace with your action (e.g., modal, navigation)
+    };
     return (
         <div className='w-full h-screen'>
-            <Canvas camera={{fov:40}}>
+            <Canvas camera={{ fov: 60 }}>
                 <OrbitControls />
                 <ambientLight />
-                <mesh>
-                    <cylinderGeometry args={[1, 1, 1, 30, 30, true]} />
-                    <meshStandardMaterial side={THREE.DoubleSide} />
-                </mesh>
+                <Scene onProjectClick={handleProjectClick} />
             </Canvas>
         </div>
     )
