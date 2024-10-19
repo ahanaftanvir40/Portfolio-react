@@ -81,10 +81,10 @@ function Hero({ textEnter, textLeave }) {
               </motion.p>
               <div className="mt-4 flex justify-center items-center sm:justify-start sm:items-start">
                 <a href="https://github.com/ahanaftanvir40" target="_blank">
-                  <img className="h-10 w-10 transition-transform transform hover:scale-110" src={githubImg} alt="" />
+                  <img className="h-11 w-11 scale-[0.9]  transition-transform transform hover:scale-110" src={githubImg} alt="" />
                 </a>
                 <a href="https://www.linkedin.com/in/ahanaf-tanvir-980a06264/" target="_blank">
-                  <img className="h-12 w-12 ml-2 opacity-65 transition-transform transform hover:scale-110" src={linkedinImg} alt="" />
+                  <img className="h-11 w-11 ml-2 scale-110  opacity-65 transition-transform transform hover:scale-125" src={linkedinImg} alt="" />
                 </a>
               </div>
             </div>
