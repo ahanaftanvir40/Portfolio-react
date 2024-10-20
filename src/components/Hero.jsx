@@ -6,6 +6,8 @@ import Typed from 'typed.js';
 import { useRef, useEffect } from "react";
 import githubImg from '../assets/github2.png'
 import linkedinImg from '../assets/linkedin.png'
+import { GithubIcon } from "lucide-react";
+import { LinkedinIcon } from "lucide-react";
 
 function Hero() {
 
@@ -64,14 +66,21 @@ function Hero() {
               >
                 Aspiring Full Stack Web Developer with a passion for creating dynamic and user-friendly websites. Proficient in MERN Stack, NextJs, JavaScript, and Python. Eager to leverage programming skills and enthusiasm for problem-solving to contribute to innovative web development projects.
               </motion.p>
-              {/* <div className="mt-4 flex justify-center items-center sm:justify-start sm:items-start">
-                <a href="https://github.com/ahanaftanvir40" target="_blank">
+              <div className="mt-4 flex justify-center items-center sm:justify-start sm:items-start">
+                {/* <a href="https://github.com/ahanaftanvir40" target="_blank">
                   <img className="h-11 w-11 scale-[0.9]  transition-transform transform hover:scale-110" src={githubImg} alt="" />
                 </a>
                 <a href="https://www.linkedin.com/in/ahanaf-tanvir-980a06264/" target="_blank">
                   <img className="h-11 w-11 ml-2 scale-110  opacity-65 transition-transform transform hover:scale-125" src={linkedinImg} alt="" />
+                </a> */}
+                <a href="https://github.com/ahanaftanvir40" target="_blank">
+                  <GithubIcon className="h-7 w-7" />
                 </a>
-              </div> */}
+                <a href="https://www.linkedin.com/in/ahanaf-tanvir-980a06264/" target="_blank">
+                  <LinkedinIcon className="h-7 w-7 ml-4" />
+                </a>
+
+              </div>
             </div>
           </div>
         </div>
