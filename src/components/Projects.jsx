@@ -61,7 +61,7 @@ function Projects({ textEnter, textLeave }) {
                 <div className=" rounded-lg shadow-[#46415c93] bg-gradient-to-r from-[#9389bd] via-[#5e4d9b] to-[#2f2d3b]">
                     <h1
                        
-                        className="cursor-none text-4xl p-4 font-light text-center"
+                        className="text-4xl p-4 font-light text-center"
                     >
                         Projects.
                     </h1>
