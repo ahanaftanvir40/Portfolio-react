@@ -58,11 +58,10 @@ function Projects({ textEnter, textLeave }) {
     return (
         <div id="projects" className="min-h-screen flex flex-col items-center justify-center p-4 sm:p-16">
             <div className="w-fit flex items-center justify-center mt-16">
-                <div className="border border-purple-950 rounded-lg shadow-md shadow-purple-800">
+                <div className=" rounded-lg shadow-[#46415c93] bg-gradient-to-r from-[#9389bd] via-[#5e4d9b] to-[#2f2d3b]">
                     <h1
-                        onMouseEnter={textEnter}
-                        onMouseLeave={textLeave}
-                        className="cursor-none text-4xl p-4 font-medium text-center"
+                       
+                        className="cursor-none text-4xl p-4 font-light text-center"
                     >
                         Projects.
                     </h1>
